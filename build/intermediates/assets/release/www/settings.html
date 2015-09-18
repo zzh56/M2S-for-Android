@@ -1,0 +1,112 @@
+<!doctype html>
+<html ng-app="docsApp" ng-controller="DocsCtrl" lang="en" ng-strict-di>
+<head>
+<meta charset="UTF-8">
+<title>M2S</title>
+<meta name="viewport" content="initial-scale=1, maximum-scale=1"/>
+<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+<link type="text/css" rel="stylesheet" href="css/m2s.css"  media="screen,projection"/>
+<link type="text/css" rel="stylesheet" href="css/fonts.css"  media="screen,projection"/>
+<link href="css/stickers.css" rel="stylesheet" media="screen">
+<script src="cordova.js"></script>
+<script src="js/md5.js"></script>
+<script type="text/javascript" src="js/login.js"></script>
+</head>
+<body class="settings">
+<nav style="height:112px">
+    <div class="nav-wrapper blue lighten-1">
+        <div class="col s12 nonsearch">
+            <a href="#!" class="brand-logo">M2S</a>
+            <ul class="side-nav" data-activates="nav-mobile" style="width:53px;height:58px;"></ul>
+        </div>
+        <div class="col s12 nonsearch">
+            <ul class="tabs blue lighten-1">
+                <li class="tab col s3"><a href="app.html" data-translate="friends"></a></li>
+                <li class="tab col s3"><a href="groups.html" data-translate="groups"></a></li>
+                <li class="tab col s3"><a href="states.html" data-translate="states"></a></li>
+                <li class="tab col s3 act"><a href="#" data-translate="settings"></a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<ul class="collapsible" data-collapsible="accordion">
+    <li>
+      <div class="collapsible-header"><i class="mdi-action-perm-identity"></i><font data-translate="editprofile"></font></div>
+      <div class="collapsible-body">
+      	<h5 data-translate="profileimage"></h5>
+      	<img src="" class="imguserdff">
+      	<div class="loadingimg"><i class="mdi-hardware-keyboard-control"></i></div>
+      	<button class="imagechange btn" data-translate="profileimagesettings"></button>
+      	<hr/>
+        <h5 data-translate="phonenumber"></h5>
+        <input type="text" data-translate="newphnum" id="mophn"/>
+        <button id="updtphbtn" class="btn widths" data-translate="update"></button>
+        <hr/>
+        <h5 data-translate="password"></h5>
+        <input type="password" data-translate="newpass" id="newpassi"/>
+        <input type="password" data-translate="newpassconf" id="confnewpassi"/>
+        <button id="updpassn" class="btn widths" data-translate="update"></button>
+      </div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="mdi-action-lock-outline"></i><font data-translate="blockpeopl"></font></div>
+      <div class="collapsible-body">
+      	<h5 data-translate="myfriends"></h5>
+        <div class="listfriendblock"></div>
+      </div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="mdi-action-star-rate"></i><font data-translate="design"></font></div>
+      <div class="collapsible-body">
+      	<p>
+    		<input type="checkbox" id="darkmde" />
+    		<label for="darkmde">Dark mode</label>
+  		</p>
+  		<p>
+    		<input type="checkbox" id="custchfon" />
+    		<label for="custchfon">Custom chat font</label>
+  		</p>
+  		<p class="fonths" style="display:none">
+  		<select id="fontja">
+            <option value='opensanscond'>Open Sans Condensed</option>
+            <option value='uncialantiqua'>Uncial Antiqua</option>
+            <option value='suranna'>Suranna</option>
+            <option value='warnes'>Warnes</option>
+            <option value='averialibre'>Averia Libre</option>
+            <option value='alegreyasc'>Alegreya SC</option>
+        </select>
+        <button class="btn widths changefont" data-translate="savech"></button>
+        </p>
+      </div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="mdi-action-language"></i><font data-translate="language"></font></div>
+      <div class="collapsible-body">
+      	<select id="idiomch">
+            <option value='en'>English</option>
+            <option value='es'>Español</option>
+            <option value='ca'>Català</option>
+            <option value='it'>Italiano</option>
+            <option value='fr'>Français</option>
+            <option value='pt'>Português</option>
+        </select>
+        <button class="btn widths changelang" data-translate="savech"></button>
+      </div>
+    </li>
+    <a href="javascript:signout()">
+    <li>
+      <div class="collapsible-header"><i class="mdi-communication-vpn-key"></i><font data-translate="signout"></font></div>
+    </li>
+    </a>
+ </ul>
+ <div id="modsv"></div>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/settings.js"></script>
+<script src="js/language.js"></script>
+<script type="text/javascript">  
+   notifications();
+  </script>
+</body>
+</html>

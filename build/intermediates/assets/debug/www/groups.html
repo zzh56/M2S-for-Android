@@ -1,0 +1,56 @@
+<!doctype html>
+<html ng-app="docsApp" ng-controller="DocsCtrl" lang="en" ng-strict-di>
+<head>
+<meta charset="UTF-8">
+<title>M2S</title>
+<meta name="viewport" content="initial-scale=1, maximum-scale=1"/>
+<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+<link type="text/css" rel="stylesheet" href="css/fonts.css"  media="screen,projection"/>
+<link type="text/css" rel="stylesheet" href="css/m2s.css"  media="screen,projection"/>
+<script src="cordova.js"></script>
+<script src="js/md5.js"></script>
+<script type="text/javascript" src="js/login.js"></script>
+</head>
+<body>
+<nav style="height:112px">
+    <div class="nav-wrapper blue lighten-1">
+        <form class="seach" style="display:none">
+            <div class="input-field col s12">
+                <input id="search-input" type="text">
+                <label for="search" class="forsearch"><i class="mdi-action-search"></i></label>
+                <div class="closesea" style="position: absolute;top: 0px;right: 10px;font-size: 2rem;"><i class="mdi-content-clear"></i></div>
+            </div>
+        </form>
+        <div class="col s12 nonsearch">
+            <a href="#!" class="brand-logo">M2S</a>
+            <ul class="side-nav" data-activates="nav-mobile">
+                <li><a href="#" class="searchaction"><i class="mdi-action-search"></i></a></li>
+            </ul>
+        </div>
+        <div class="col s12 nonsearch">
+            <ul class="tabs blue lighten-1">
+                <li class="tab col s3"><a href="app.html" data-translate="friends"></a></li>
+                <li class="tab col s3 act"><a href="#" data-translate="groups"></a></li>
+                <li class="tab col s3"><a href="states.html" data-translate="states"></a></li>
+                <li class="tab col s3"><a href="settings.html" data-translate="settings"></a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<ul class="collection withimages">
+</ul>
+<a class="btn-floating btn-large waves-effect waves-light green" href="#" onclick="spanneraddgroups()" style="position:fixed;bottom:20px;right:25px;z-index:10000000000"><i class="mdi-content-add"></i></a>
+<div class="spinele"></div>
+<div id="modsv"></div>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<script type="text/javascript" src="js/tinysort.min.js"></script>
+<script type="text/javascript" src="js/tinysort.charorder.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/groups.js"></script>
+<script src="js/language.js"></script>
+<script type="text/javascript">   
+   notifications();
+  </script>
+</body>
+</html>

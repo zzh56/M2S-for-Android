@@ -1,0 +1,73 @@
+@font-face {
+  	font-family: 'Open Sans Condensed';
+  	font-style: normal;
+  	font-weight: 300;
+  	src: local('Open Sans Cond Light'), local('OpenSans-CondensedLight'), url('../font/sanscond.ttf') format('truetype');
+}
+
+@font-face {
+  	font-family: 'Uncial Antiqua';
+  	font-style: normal;
+  	font-weight: 300;
+  	src: local('Uncial Antiqua'), local('UncialAntiqua-Regular'), url('../font/uncialantiqua.ttf') format('truetype');
+}
+
+@font-face {
+  	font-family: 'Suranna';
+  	font-style: normal;
+  	font-weight: 400;
+  	src: local('Suranna'), url('../font/suranna.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Warnes';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Warnes'), local('Warnes-Regular'), url('http://fonts.gstatic.com/s/warnes/v6/U81my6YqUoc4TUbgCpcoM-vvDin1pK8aKteLpeZ5c0A.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Averia Libre';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Averia Libre Light'), local('AveriaLibre-Light'), url('http://fonts.gstatic.com/s/averialibre/v4/r6hGL8sSLm4dTzOPXgx5XU7nEl83IKQRaQwpv_tz1Eg.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Alegreya SC';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Alegreya SC'), local('AlegreyaSC-Regular'), url(http://fonts.gstatic.com/s/alegreyasc/v6/-74JUGs8W14C5cCBFRS30ywlidHJgAgmTjOEEzwu1L8.ttf) format('truetype');
+}
+
+.opensanscond{
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.uncialantiqua{
+	font-family: 'Uncial Antiqua', cursive;
+}
+
+.uncialantiqua li.tab a {
+    font-size: 12px;
+}
+
+.suranna{
+	font-family: 'Suranna', serif;
+}
+
+.warnes{
+	font-family: 'Warnes', cursive;
+}
+
+.warnes .tabs li.tab a {
+    font-size: 12px;
+}
+
+.averialibre{
+	font-family: 'Averia Libre', cursive;
+}
+
+.alegreyasc{
+	font-family: 'Alegreya SC', serif;
+}

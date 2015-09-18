@@ -1,0 +1,70 @@
+<html>
+  <head>
+    <title></title>
+    <script src="cordova.js"></script>
+    <script type="text/javascript">
+    document.addEventListener("deviceready", onDeviceReady, false);
+
+    function onDeviceReady() {
+        window.plugin.notification.local.add({ icon: 'ic_launcher', title: 'M2S', message: 'You have new notifications!' });
+    }
+
+    function alertDismissed() {
+    }
+
+    function showAlert() {
+        navigator.notification.alert(
+            'You are the winner!',  // message
+            alertDismissed,         // callback
+            'Game Over',            // title
+            'Done'                  // buttonName
+        );
+    }
+
+    function showConfirm() {
+        navigator.notification.confirm(
+            'You are the winner!',
+             function(buttonIndex){
+                alert('You selected button ' + buttonIndex);
+             },
+            'Game Over',
+            ['Restart','Exit']
+        );
+    }
+
+    function showLocation(){
+        navigator.geolocation.getCurrentPosition(function(position){
+            var element = document.getElementById('geolocation');
+            element.innerHTML = 'Latitude: '           + position.coords.latitude              + '<br />' +
+                                'Longitude: '          + position.coords.longitude             + '<br />' +
+                                'Altitude: '           + position.coords.altitude              + '<br />' +
+                                'Accuracy: '           + position.coords.accuracy              + '<br />' +
+                                'Altitude Accuracy: '  + position.coords.altitudeAccuracy      + '<br />' +
+                                'Heading: '            + position.coords.heading               + '<br />' +
+                                'Speed: '              + position.coords.speed                 + '<br />' +
+                                'Timestamp: '          + position.timestamp                    + '<br />';
+        }, function(error) {
+            alert('code: '    + error.code    + '\n' + 'message: ' + error.message + '\n');
+        });
+    }
+
+    function showBrowser(){
+        window.open('http://m2s.es', '_blank', 'location=yes');
+    }
+
+    function showImage(){
+        fileChooser.open(function(uri) {
+            alert(uri);
+        });
+    }
+    </script>
+  </head>
+  <body>
+  <p><a href="#" onclick="showAlert(); return false;">Show Alert</a></p>
+  <p><a href="#" onclick="showConfirm(); return false;">Show Confirm</a></p>
+  <p><a href="#" onclick="showLocation(); return false;">Show Location</a></p>
+  <p><a href="#" onclick="showBrowser(); return false;">Show Browser</a></p>
+  <p><a href="#" onclick="showImage(); return false;">Show Input</a></p>
+  <p id="geolocation"></p>
+  </body>
+</html>

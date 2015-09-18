@@ -1,0 +1,1035 @@
+.bar-notification {
+	background-color: #000;
+	color: #fff;
+	text-align: center;
+	position: fixed;
+	z-index: 100000000000;
+	width: 100%;
+	top:0px;
+	cursor: pointer;
+  height: 21px
+}
+
+.firts-pass{
+	background-color: #42A5F5;
+	margin:10px;
+}
+
+.firts-pass h2 {
+	margin: 0px;
+	font-size: 32px;
+	font-weight: 300;
+}
+.firts-pass h4 {
+	margin: 0px;
+	font-size: 20px;
+	font-weight: 300;
+	text-align: center;
+}
+
+.btn.widths{
+  width: 100%;
+}
+
+p.labels {
+    margin-left: -10px;
+    margin-top: -5px;
+}
+
+.firts-pass .input-field .prefix ~ label {
+    margin-left: 2.2rem !important;
+}
+
+.firts-pass .input-field{
+	margin-top:10px;
+}
+
+.firts-pass .select-wrapper{
+	margin-left:40px;
+	top: -10px;
+    position: relative;
+}
+
+.background-dark{
+	background: rgba(0,0,0,0.8);
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 1000000000000000000000;
+}
+
+#closenotifications{
+	color: rgb(255, 255, 255);
+	font-size: 39px;
+	float: right;
+	margin-right: 10px;
+}
+
+#list-notifications{
+	margin:30px;
+	margin-top: 70px;
+	height: calc(100% - 120px);
+	overflow: auto;
+}
+
+#list-notifications .item{
+    min-height: 95px;
+    color: #fff;
+    margin-bottom: 10px
+}
+
+#list-notifications .item img{
+	float:left;
+	width: 80px;
+	height: 80px
+}
+
+#list-notifications .item span{
+	font-weight: bold
+}
+
+#list-notifications .item .right-img{
+    padding-left:88px;
+}
+
+#list-notifications .item .right-img button{
+	display: block;
+	margin-top: 10px;
+	width: 100%;
+}
+
+.preloader-wrapper{
+	background-color: transparent !important;
+}
+
+.brand-logo.forw{
+	font-size: 1.2rem !important;
+}
+
+.brand-logo.forw a{
+	float: left;
+	margin-right: 15px;
+	font-size: 23px;
+	margin-left: 4px
+}
+
+.usernlk {
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.input-field{
+	margin-top: 10px;
+}
+
+#person{
+	text-align: center;
+	margin: 30px
+}
+
+#person p{
+	margin:5px;
+}
+
+.navspinner{
+	position: fixed;
+	right: 35px;
+	bottom: 97px;
+}
+
+.navspinner div{
+	margin-top: 8px;
+	text-align: right;
+}
+
+.itemspinner{
+	background-color: #FFF;
+	color: #555;
+	border: 1px solid #ddd;
+	padding: 6px;
+	font-size: 12px;
+	text-align: center;
+	border-radius: 5px;
+	margin-right: 12px;
+	position: relative;
+	top: -5px;
+}
+
+.img p{
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 20px;
+	line-height: 20px;
+	color: #fff !important;
+	font-weight: 300;
+}
+
+.seach .input-field{
+	margin-top:0px;
+}
+
+.officials, .news, .intgr {
+  	border-top: 25px solid #777;
+}
+
+.officials:before {
+  	position: absolute;
+ 	margin-top: -22px;
+  	font-size: 12px;
+  	text-transform: uppercase;
+  	text-align: center;
+  	width: 100%;
+  	padding-left: 20px;
+  	box-sizing: border-box;
+  	color: #fff
+}
+
+.en.officials:before{
+  	content: 'Official groups';
+}
+
+.es.officials:before{
+  	content: 'Grupos oficiales';
+}
+
+.ca.officials:before{
+  	content: 'Grups oficials';
+}
+
+.it.officials:before{
+  	content: 'Gruppi ufficiali';
+}
+
+.fr.officials:before{
+  	content: 'Groupes officiels';
+}
+
+.news:before {
+  	position: absolute;
+  	margin-top: -22px;
+  	font-size: 12px;
+  	text-transform: uppercase;
+  	text-align: center;
+  	width: 100%;
+  	padding-left: 20px;
+  	box-sizing: border-box;
+  	color: #fff
+}
+
+.en.news:before{
+  	content: 'New groups';
+}
+
+.es.news:before{
+  	content: 'Grupos nuevos';
+}
+
+.cat.news:before{
+  	content: 'Grups nous';
+}
+
+.it.news:before{
+  	content: 'Nuovi gruppi';
+}
+
+.fr.news:before{
+  	content: 'Nouveaux groupes';
+}
+
+.intgr:before {
+ 	position: absolute;
+  	margin-top: -22px;
+  	font-size: 12px;
+  	text-transform: uppercase;
+  	text-align: center;
+  	width: 100%;
+  	padding-left: 20px;
+  	box-sizing: border-box;
+  	color: #fff
+}
+
+.en.intgr:before{
+  	content: 'Groups that you might like';
+}
+
+.es.intgr:before{
+  	content: 'Grupos que podrían gustarte';
+}
+
+.cat.intgr:before{
+  	content: 'Grups que podrien agradarte';
+}
+
+.it.intgr:before{
+  	content: 'Gruppi Potresti Gradire';
+}
+
+.fr.intgr:before{
+  	content: 'Groupes vous pouvez aimer';
+}
+
+.collection-item.official:before{
+	float: left;
+	content: "\e623";
+	font-family: "Material-Design-Icons";
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	-moz-osx-font-smoothing: grayscale;
+	background-color: #000;
+	font-size: 20px;
+	z-index: 10;
+	position: absolute;
+	margin-left: 42px;
+	padding: 2px;
+	border-radius: 15px;
+	color: #fff;
+	margin-top: 32px
+}
+
+nav.profile{
+	background: rgba(0,0,0,0);
+	position: fixed;
+	box-shadow: none;
+	z-index:1000;
+	background: url("../images/backheader.jpg");
+	background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header{
+	background: url("../images/backheader.jpg");
+	background-repeat: no-repeat;
+	height: 280px;
+	position: fixed;
+	width: 100%;
+	z-index: -10;
+  background-size: cover;
+}
+
+.clasmod{
+	position: relative;
+	z-index:100;
+	background-color: #f2f2f2;
+	width: 100%;
+	padding: 10px
+}
+
+.profile .classmod{
+	top: 300px;
+}
+
+.clasmod .card.blue-grey{
+	margin-top: -80px;
+}
+
+header #loading-user{
+	margin-top: 120px
+}
+
+nav .onresd{
+	display: none;
+}
+
+.primg {
+    float: none;
+    text-align: center;
+    padding-top: 60px;
+}
+
+.primg .profile-badge {
+    float: none;
+    border: 3px solid #fff;
+    width: 110px;
+    height: 110px;
+    border-radius: 55px;
+    margin-right: 0px;
+    display: inline-block;
+}
+
+.primg div.profile-badge p{
+	font-size:44px
+}
+
+.primg.official:before{
+	content: "\e623";
+	font-family: "Material-Design-Icons";
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	-moz-osx-font-smoothing: grayscale;
+	background-color: #000;
+	font-size: 26px;
+	z-index: 10;
+	position: absolute;
+	margin-left: 78px;
+	padding: 2px;
+	border-radius: 25px;
+	color: #FFF;
+	padding-left: 7px;
+	padding-right: 7px;
+	margin-top: 67px;
+}
+
+.primg h5{
+	color: #fff
+}
+
+font.date{
+	font-size: 12px;
+	color: #777;
+	font-weight: 300
+}
+
+.card-content.createdby img{
+	width: 50px;
+	height: 50px;
+	border-radius: 25px;
+	display: inline;
+	border: 1px solid #ccc;
+}
+
+.card-content.createdby i{
+   display: block;
+}
+
+.brand-logo.profil{
+	width: 100%;
+  	padding-left: 24px;
+  	box-sizing: border-box;
+}
+
+.brand-logo .rightna{
+	float: right !important;
+}
+
+.card-content .input-field{
+	margin-top: 0px
+}
+
+.card-content .input-field label{
+    margin-left: -10px;
+}
+
+.share-moreapp{
+    background: rgba(0,0,0,0.7);
+    position: fixed;
+    top: 0px;
+    left:0px;
+    width:100%;
+    height:100%;
+    display: none;
+    z-index: 10000000000;
+}
+
+.modal-share {
+   	width: 300px;
+  	height: 350px;
+   	background-color: #fff;
+   	border: 1px solid #999;
+   	border-radius: 4px;
+   	position: relative;
+   	left: 50%;
+   	margin-left: -150px;
+   	top: 50%;
+   	margin-top: -180px;
+}
+
+.modal-share .heads {
+  	background-color: #eee;
+  	border-bottom: 1px solid #ddd;
+  	color: #777;
+  	padding: 10px;
+}
+
+.modal-share .heads h3 {
+  	font-size: 18px;
+	margin: 0px;
+	padding: 0px;
+	height: 26px;
+	position: relative;
+	top: -8px;
+}
+
+.modal-share .heads i.remove {
+  	position: absolute;
+  	top: 8px;
+  	right: 15px;
+  	cursor: pointer;
+  	font-size: 22px
+}
+
+.bargroup-emo span {
+  	color: #fff;
+  	font-variant: small-caps;
+  	cursor: pointer;
+  	margin-left: 10px;
+}
+
+#file-input {
+  	width: 100%;
+  	height: 260px;
+  	opacity: 0;
+  	cursor: pointer;
+}
+
+h3#upload-imge{
+  	display: none
+}
+
+.imageuplo{
+  	display: none
+}
+
+.sections-share {
+  	height: 260px;
+  	overflow-y: scroll;
+}
+
+.sections-share .stickerss {
+  	text-align: center;
+  	padding-top: 35px;
+}
+
+.bargroup-emo {
+  	position: absolute;
+  	top: 88px;
+  	background-color: #999;
+  	width: 100%;
+  	padding-top: 5px;
+  	padding-bottom: 5px;
+}
+
+.allimac {
+  	height: 252px;
+  	overflow-y: auto;
+}
+
+#canvas {
+  	width: 100%;
+}
+
+.imageuplo .btn-primary {
+  	background-color: #777;
+  	color: #fff;
+  	border: 1px solid #888;
+  	position: relative;
+  	float: right;
+  	top: 6px;
+  	right: 6px;
+  	margin-left: 5px
+}
+
+.imageuplo .btn-cancel {
+  	background-color: #C6C6C6;
+  	border-color: #aaa;
+  	float:right;
+  	top: 6px;
+  	position: relative;
+  	right: 6px
+}
+#location {
+  	padding: 10px;
+}
+
+.selct-shareop {
+  	background-color: #ddd;
+  	color: #000;
+}
+
+.selct-shareop span {
+  	padding: 10px;
+  	position: relative;
+  	width: 80.5px;
+  	display: inline-block;
+  	text-align: center;
+  	cursor:pointer;
+}
+
+.selct-shareop span.sel {
+  	background-color: #ccc;
+}
+#imagest, #locastdfg {
+  	margin-left: -5px;
+}
+
+.back-fileinput {
+  	position: absolute;
+  	top: 85px;
+  	height: 260px;
+  	width: 100%;
+  	text-align: center;
+}
+
+.back-fileinput i.mdi-image-image {
+  	font-size: 100px;
+	position: relative;
+	top: 10px;
+	color: rgb(153, 153, 153);
+}
+
+.back-fileinput h4 {
+  	margin-top: -17px;
+  	font-size: 18px;
+}
+
+.imagechat{
+	width: 100%;
+	max-height: 200px;
+	overflow: hidden;
+}
+
+.imagechat img{
+	width: 100%
+}
+
+.card-title{
+	margin-bottom: 5px;
+}
+
+.card-title img {
+    width: 45px;
+    height: 45px;
+    border-radius: 22.5px;
+    float: left;
+}
+
+.card-title .img {
+    width: 45px;
+    height: 45px;
+    border-radius: 22.5px;
+    float: left;
+}
+
+.card-title .img p{
+	line-height: 2.3;
+}
+
+.card-title font{
+	color: #000 !important;
+	font-size: 16px;
+  position: relative;
+  top: -5px;
+  left: -5px;
+}
+
+.chatpage{
+	background-color: #eee;
+}
+
+.msmdiv {
+  width: 100%;
+  height: calc(100% - 170px);
+  overflow: auto;
+  display: block;
+  position: absolute;
+  padding-top: 10px;
+}
+
+.sendmsmsdiv {
+    width: 100%;
+    padding: 10px;
+    position: fixed;
+	bottom: 0px;
+}
+
+.sendbutn {
+    float: right;
+    font-size: 16px;
+    padding-left: 13px;
+    padding-right: 13px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-color: #ccc;
+    border-radius: 21px;
+    color: #555;
+}
+
+.sendbutn i {
+    position: relative;
+    left: 1.4px;
+    top: 1px;
+}
+
+.sendmsmsdiv i.mdi-content-add {
+    float: left;
+    display: inline-block;
+    font-size: 23px;
+    color: #bbb;
+    position: relative;
+	top: 5px;
+	left: 10px
+}
+
+.sendtxtd {
+  background-color: #FFF !important;
+  border-radius: 2px;
+  width: calc(100% - 130px) !important;
+  padding-left: 11px !important;
+  padding-right: 10px !important;
+  font-size: 13px !important;
+  margin-left: 30px !important;
+  color: #000 !important;
+  border: 0px solid rgb(221, 221, 221) !important;
+}
+
+.sendtxtdtr {
+    width: 0px;
+    height: 0px;
+    border-top: 17px solid #FFF;
+    border-right: 18px solid transparent;
+    display: inline-block;
+    position: absolute;
+	margin-top: 0px;
+	margin-left: -6px;
+}
+
+.imguserdf {
+    border-radius: 20px;
+    display: inline-block;
+    width: 42px;
+    height: 42px;
+    float: right;
+}
+
+.sms .imgp {
+    width: 42px;
+    height: 42px;
+    float: left;
+    border-radius: 21px;
+    margin-left: 10px
+}
+
+.sms blockquote {
+    margin: 10px 64px 10px 64px;
+    background-color: #03a9f4;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: block;
+    color: rgb(255, 255, 255);
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    border-radius: 2px;
+    border-color: none !important;
+    border-left: 0px !important;
+}
+
+.sms blockquote p {
+    margin: 1px !important;
+    word-break: break-all;
+}
+
+.sms blockquote:before{
+ 	  width: 0;
+    height: 0;
+    border-top: 17px solid #03a9f4; 
+    border-left: 18px solid transparent;
+    display: inline-block;
+    position: absolute;
+	  margin-left: -22px;
+	  margin-top: -10px;
+	  content: ' ';
+}
+
+.sms.me blockquote {
+    background-color: #FFF !important;
+    color: #000;
+}
+
+.sms.me .imgp {
+    float: right;
+    margin-left: 0px;
+    margin-right: 10px;
+}
+
+.sms.me blockquote:before{
+    border-top: 17px solid #FFF !important;
+    border-right: 18px solid transparent !important;
+    border-left: none !important;
+    right: 51px;
+}
+
+.sms.continu blockquote:before{
+    content: none !important;
+}
+
+.sms blockquote .foot {
+    font-size: 12px;
+    font-weight: 200;
+}
+
+.sms.continu .imgp {
+    display: none;
+}
+
+.sms.continu blockquote{
+    margin-top: -8px !important;
+}
+
+#moreopt .dropdown-content {
+  right: 6px !important;
+  top: 6px !important;
+  display:block !important;
+  opacity:1 !important;
+}
+
+#moreopt{
+  display: none;
+}
+
+.nochat h3 {
+    color: #777;
+    padding: 30px;
+    font-size: 26px;
+}
+
+.nochat h3 i {
+    display: block;
+    font-size: 100px;
+    margin-bottom: 35px;
+}
+
+.sms.admin blockquote::before {
+    content: none !important;
+}
+
+textarea{
+    color:#000 !important;
+}
+
+.sms.admin blockquote {
+    background-color: #0097a7 !important;
+}
+
+.primg h5 p {
+    margin: 0px;
+    font-size: 12px;
+    font-weight: 200;
+}
+
+.tabs .indicator{
+  background-color: #777 !important;
+}
+
+body.settings{
+  background-color: #f2f2f2;
+}
+
+.collapsible-body {
+    padding: 15px;
+}
+
+.collapsible-body p{
+    padding: 0px;
+}
+
+a .collapsible-header {
+    color: #000;
+}
+
+.collapsible-body h5 {
+    margin: 0px;
+    font-size: 18px;
+}
+
+.userblockgrouplist {
+    min-height: 60px;
+    padding-top: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 10px;
+}
+
+.userblockgrouplist .img {
+    float: left;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+}
+
+.userblockgrouplist .left-jk {
+    margin-left: 65px;
+}
+
+.userblockgrouplist .left-jk .btn {
+    position: absolute;
+    right: 15px;
+    margin-top: -17px
+}
+
+.userblockgrouplist .left-jk b {
+    display: block;
+    margin-top: 10px;
+}
+
+.imguserdff {
+    width: 80px;
+    height: 80px;
+    float: right;
+    border-radius: 40px;
+    margin-top: -30px;
+}
+
+.imagechange {
+    position: relative;
+    top: 7px;
+}
+
+.loadingimg {
+    display: none;
+    position: absolute;
+    right: 16px;
+    background-color: #ddd;
+    font-size: 34px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 23px;
+    padding-right: 23px;
+    border-radius: 40px;
+    margin-top: -30.7px;
+    opacity: 0.8;
+}
+
+.no-friends{
+    text-align: center;
+    margin: 20px
+}
+
+.no-friends h4{
+    font-size: 18px;
+}
+
+.no-friends p{
+    font-size: 14px;
+    margin-top: 5px
+}
+
+/* Dark mode */
+.dark{
+	background-color: #000 !important;
+  color: #fff;
+}
+.dark .nav-wrapper {
+    background-color: rgb(84, 110, 122) !important;
+}
+.dark .tabs {
+    background-color: rgb(84, 110, 122) !important;
+}
+.dark .clasmod {
+    background-color: rgb(17, 17, 17) !important;
+}
+.dark .card {
+    background-color: #37474f !important;
+    color: #fff !important;
+}
+.dark .collection {
+    background-color: #263238 !important;
+}
+.dark .collection-item {
+    border-color: #111;
+}
+.dark font {
+    color: #fff !important;
+}
+.dark .card-content p {
+    color: #fff !important;
+}
+.dark .modal-share {
+    background-color: #333;
+    border-color: #333;
+}
+.dark .modal-share .heads {
+    background-color: #607d8b !important;
+    color: #fff !important;
+    border-color: #607d8b;
+}
+.dark .selct-shareop {
+    background-color: #455a64 !important;
+    color: rgb(255, 255, 255);
+}
+.dark .selct-shareop span.sel {
+    background-color: #37474f !important;
+}
+.dark .bargroup-emo {
+    background-color: #9e9e9e;
+}
+.dark h4{
+	color: #fff !important;
+}
+.dark .btn {
+    background-color: #0277bd;
+}
+.dark .profile .nav-wrapper {
+    background-color: transparent !important;
+}
+.dark input, textarea {
+    color: #fff !important;
+}
+.dark #person {
+    color: #ddd !important;
+}
+.dark .officials, .news, .intgr {
+    border-top: 25px solid #90a4ae;
+}
+.dark .sms blockquote{
+    background-color: #01579b !important;
+}
+.dark .sms blockquote:before{
+    border-top-color: #01579b !important;
+}
+.dark .sms.me blockquote{
+    background-color: #455A64 !important;
+    color: #fff !important;
+}
+.dark .sms.me blockquote:before{
+    border-top-color: #455A64 !important;
+}
+.dark .sendtxtd{
+    background-color: #455A64 !important
+}
+.dark .sendtxtdtr{
+    border-top-color: #455A64 !important;
+}
+.dark .sendmsmsdiv i.mdi-content-add{
+  color: #fff !important;
+}
+.dark .dropdown-content{
+  background-color: #263238 !important;
+}
+.dark .nochat h3{
+  color: #ddd !important;
+}
+.dark .collapsible {
+    border-color: #37474f !important;
+}
+.dark .collapsible-header {
+    border-color: #455a64 !important;
+    background-color: #37474f !important;
+}
+.dark .collapsible-body {
+    border-color: #37474f !important;
+}
+.dark .collapsible-header i {
+    color: #fff !important;
+}
+.dark .select-dropdown {
+    color: #ddd !important;
+}
+.dark .dropdown-content li {
+    color: #ddd !important;
+}
+.dark .profile-badge {
+    background-color: #000;
+}
+.dark.settings hr{
+    color: #ccc;
+}
+.dark .card-content.createdby{
+    color: #fff !important;
+}
+.dark .card-content.createdbyf{
+    color: #fff !important;
+}

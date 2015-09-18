@@ -1,0 +1,151 @@
+<!doctype html>
+<html ng-app="docsApp" ng-controller="DocsCtrl" lang="en" ng-strict-di>
+<head>
+<meta charset="UTF-8">
+<title>M2S</title>
+<meta name="viewport" content="initial-scale=1, maximum-scale=1"/>
+<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+<link type="text/css" rel="stylesheet" href="css/fonts.css"  media="screen,projection"/>
+<link type="text/css" rel="stylesheet" href="css/m2s.css"  media="screen,projection"/>
+<link href="css/stickers.css" rel="stylesheet" media="screen">
+<script src="cordova.js"></script>
+<script src="js/md5.js"></script>
+<script type="text/javascript" src="js/login.js"></script>
+</head>
+<body>
+<nav class="profile">
+    <div class="nav-wrapper">
+        <div class="col s12">
+            <font class="brand-logo forw profil"> <a href="javascript:history.back(1)"><i class="mdi-navigation-arrow-back"></i></a><font class="onresd"></font> <ul class="side-nav" data-activates="nav-mobile" style="width:40px;height:58px;"></ul></font>
+        </div>
+    </div>
+</nav>
+<header>
+      <div id="loading-user" class="col s12 center" style="padding-bottom:25px"><div class="preloader-wrapper active"><div class="spinner-layer spinner-blue"><div class="circle-clipper left"><div class="circle"></div></div><div class="gap-patch"><div class="circle"></div></div><div class="circle-clipper right"><div class="circle"></div></div></div><div class="spinner-layer spinner-red"><div class="circle-clipper left"><div class="circle"></div></div><div class="gap-patch"><div class="circle"></div></div><div class="circle-clipper right"><div class="circle"></div></div></div><div class="spinner-layer spinner-yellow"><div class="circle-clipper left"><div class="circle"></div></div><div class="gap-patch"><div class="circle"></div></div><div class="circle-clipper right"><div class="circle"></div></div></div><div class="spinner-layer spinner-green"><div class="circle-clipper left"><div class="circle"></div></div><div class="gap-patch"><div class="circle"></div></div><div class="circle-clipper right"><div class="circle"></div></div></div></div></div>
+</header>
+<div class="clasmod" style="top:310px">
+  <div class="card blue-grey darken-1">
+    <div class="card-content white-text">
+    </div>
+    <div class="card-action"></div>
+  </div>
+  <div class="card white sendstategr" style="display:none">
+    <div class="card-content black-text">
+      <div class="input-field">
+        <textarea class="materialize-textarea" name="txt" id="txtshare"></textarea>
+        <label data-translate="writestate" for="txtshare"></label>
+      </div>
+      <a class="waves-effect waves-light btn white-text more-forsend" style="margin: 0px;float: left;">+</a>
+      <a class="waves-effect waves-light btn white-text send-state" style="margin: 0px;width: calc(100% - 70px);margin-left: 5px;" data-translate="send"></a>
+    </div>
+  </div>
+  </div>
+</div>
+
+<div id="modsv"></div>
+
+<div class="share-moreapp">
+      <div class="modal-share">
+        <div class="heads">
+          <h3 id="share-mre" data-translate="sharemore"></h3>
+          <h3 id="upload-imge" data-translate="uploadimage"></h3>
+          <i class="mdi-navigation-close remove"></i>
+        </div>
+        <div class="selct-shareop">
+          <span class="optlink sel" id="stickerss">Stickers</span>
+          <span class="optlink" id="imagest" data-translate="image"></span>
+          <span class="optlink" id="locastdfg" data-translate="location"></span>
+        </div>
+        <div class="sections-share">
+          <div class="stickerss">
+             <div class="bargroup-emo">
+               <span class="sticks-classics">Classics</span>
+               <span class="sticks-bun">Bun</span>
+             </div>
+             <div class="icon-group" id="sticks-classics">
+               <a href="javascript:poststick('memesgosd c1-l1')"><div class="memesgosd c1-l1 mini"></div></a>
+               <a href="javascript:poststick('memesgosd c2-l1')"><div class="memesgosd c2-l1 mini"></div></a>
+               <a href="javascript:poststick('memesgosd c3-l1')"><div class="memesgosd c3-l1 mini"></div></a>
+               <a href="javascript:poststick('memesgosd c4-l1')"><div class="memesgosd c4-l1 mini"></div></a>
+               <a href="javascript:poststick('memesgosd c1-l2')"><div class="memesgosd c1-l2 mini"></div></a>
+               <a href="javascript:poststick('memesgosd c2-l2')"><div class="memesgosd c2-l2 mini"></div></a>
+               <a href="javascript:poststick('memesgosd c3-l2')"><div class="memesgosd c3-l2 mini"></div></a>
+               <a href="javascript:poststick('memesgosd c4-l2')"><div class="memesgosd c4-l2 mini"></div></a>
+               <a href="javascript:poststick('memesgosd c1-l3')"><div class="memesgosd c1-l3 mini"></div></a>
+               <a href="javascript:poststick('memesgosd c2-l3')"><div class="memesgosd c2-l3 mini"></div></a>
+               <a href="javascript:poststick('memesgosd c3-l3')"><div class="memesgosd c3-l3 mini"></div></a>
+               <a href="javascript:poststick('memesgosd c4-l3')"><div class="memesgosd c4-l3 mini"></div></a>
+               <a href="javascript:poststick('memesgosd c1-l4')"><div class="memesgosd c1-l4 mini"></div></a>
+               <a href="javascript:poststick('memesgosd c2-l4')"><div class="memesgosd c2-l4 mini"></div></a>
+               <a href="javascript:poststick('memesgosd c3-l4')"><div class="memesgosd c3-l4 mini"></div></a>
+               <a href="javascript:poststick('memesgosd c4-l4')"><div class="memesgosd c4-l4 mini"></div></a>
+               <a href="javascript:poststick('memesgosd c1-l5')"><div class="memesgosd c1-l5 mini"></div></a>
+               <a href="javascript:poststick('memesgosd c2-l5')"><div class="memesgosd c2-l5 mini"></div></a>
+               <a href="javascript:poststick('memesgosd c3-l5')"><div class="memesgosd c3-l5 mini"></div></a>
+               <a href="javascript:poststick('memesgosd c4-l5')"><div class="memesgosd c4-l5 mini"></div></a>
+               <a href="javascript:poststick('memesgosd c1-l6')"><div class="memesgosd c1-l6 mini"></div></a>
+               <a href="javascript:poststick('memesgosd c2-l6')"><div class="memesgosd c2-l6 mini"></div></a>
+               <a href="javascript:poststick('memesgosd c3-l6')"><div class="memesgosd c3-l6 mini"></div></a>
+               <a href="javascript:poststick('memesgosd c4-l6')"><div class="memesgosd c4-l6 mini"></div></a>
+               <a href="javascript:poststick('memesgosd c1-l7')"><div class="memesgosd c1-l7 mini"></div></a>
+               <a href="javascript:poststick('memesgosd c2-l7')"><div class="memesgosd c2-l7 mini"></div></a>
+               <a href="javascript:poststick('memesgosd c3-l7')"><div class="memesgosd c3-l7 mini"></div></a>
+               <a href="javascript:poststick('memesgosd c4-l7')"><div class="memesgosd c4-l7 mini"></div></a>
+               <a href="javascript:poststick('memesgosd c1-l8')"><div class="memesgosd c1-l8 mini"></div></a>
+               <a href="javascript:poststick('memesgosd c2-l8')"><div class="memesgosd c2-l8 mini"></div></a>
+               <a href="javascript:poststick('memesgosd c3-l8')"><div class="memesgosd c3-l8 mini"></div></a>
+               <a href="javascript:poststick('memesgosd c4-l8')"><div class="memesgosd c4-l8 mini"></div></a>
+           </div>
+           <div class="icon-group" id="sticks-bun" style="display:none">
+               <a href="javascript:poststick('memesgosd bun-1')"><div class="memesgosd bun-1 mini"></div></a>
+               <a href="javascript:poststick('memesgosd bun-2')"><div class="memesgosd bun-2 mini"></div></a>
+               <a href="javascript:poststick('memesgosd bun-3')"><div class="memesgosd bun-3 mini"></div></a>
+               <a href="javascript:poststick('memesgosd bun-4')"><div class="memesgosd bun-4 mini"></div></a>
+               <a href="javascript:poststick('memesgosd bun-5')"><div class="memesgosd bun-5 mini"></div></a>
+               <a href="javascript:poststick('memesgosd bun-6')"><div class="memesgosd bun-6 mini"></div></a>
+               <a href="javascript:poststick('memesgosd bun-7')"><div class="memesgosd bun-7 mini"></div></a>
+               <a href="javascript:poststick('memesgosd bun-8')"><div class="memesgosd bun-8 mini"></div></a>
+               <a href="javascript:poststick('memesgosd bun-9')"><div class="memesgosd bun-9 mini"></div></a>
+               <a href="javascript:poststick('memesgosd bun-10')"><div class="memesgosd bun-10 mini"></div></a>
+               <a href="javascript:poststick('memesgosd bun-11')"><div class="memesgosd bun-11 mini"></div></a>
+               <a href="javascript:poststick('memesgosd bun-12')"><div class="memesgosd bun-12 mini"></div></a>
+               <a href="javascript:poststick('memesgosd bun-13')"><div class="memesgosd bun-13 mini"></div></a>
+               <a href="javascript:poststick('memesgosd bun-14')"><div class="memesgosd bun-14 mini"></div></a>
+               <a href="javascript:poststick('memesgosd bun-15')"><div class="memesgosd bun-15 mini"></div></a>
+               <a href="javascript:poststick('memesgosd bun-16')"><div class="memesgosd bun-16 mini"></div></a>
+               <a href="javascript:poststick('memesgosd bun-17')"><div class="memesgosd bun-17 mini"></div></a>
+               <a href="javascript:poststick('memesgosd bun-18')"><div class="memesgosd bun-18 mini"></div></a>
+               <a href="javascript:poststick('memesgosd bun-19')"><div class="memesgosd bun-19 mini"></div></a>
+               <a href="javascript:poststick('memesgosd bun-20')"><div class="memesgosd bun-20 mini"></div></a>
+               <a href="javascript:poststick('memesgosd bun-21')"><div class="memesgosd bun-21 mini"></div></a>
+             </div>
+          </div>
+          <div class="imagest" style="display:none">
+            <div class="back-fileinput">
+               <i class="mdi-image-image"></i>
+               <h4 data-translate="uploadimageinfo"></h4>
+            </div>
+          </div>
+          <div class="locastdfg" id="location" style="display:none">
+            <button class="btn" id="btn-location" style="width:100%;" data-translate="sharelocation"></button>
+          </div>
+        </div>
+        <div class="imageuplo">
+           <div id="loading-imgs" class="col s12 center" style="padding-top:25px"><div class="preloader-wrapper active"><div class="spinner-layer spinner-blue"><div class="circle-clipper left"><div class="circle"></div></div><div class="gap-patch"><div class="circle"></div></div><div class="circle-clipper right"><div class="circle"></div></div></div><div class="spinner-layer spinner-red"><div class="circle-clipper left"><div class="circle"></div></div><div class="gap-patch"><div class="circle"></div></div><div class="circle-clipper right"><div class="circle"></div></div></div><div class="spinner-layer spinner-yellow"><div class="circle-clipper left"><div class="circle"></div></div><div class="gap-patch"><div class="circle"></div></div><div class="circle-clipper right"><div class="circle"></div></div></div><div class="spinner-layer spinner-green"><div class="circle-clipper left"><div class="circle"></div></div><div class="gap-patch"><div class="circle"></div></div><div class="circle-clipper right"><div class="circle"></div></div></div></div></div>
+        </div>
+      </div>
+      </div>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>
+<script type="text/javascript" src="js/gets.js"></script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<script type="text/javascript" src="js/tinysort.min.js"></script>
+<script type="text/javascript" src="js/tinysort.charorder.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/profilegr.js"></script>
+<script src="js/language.js"></script>
+<script type="text/javascript">  
+   notifications();
+  </script>
+</body>
+</html>
